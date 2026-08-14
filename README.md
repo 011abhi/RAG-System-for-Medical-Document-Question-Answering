@@ -4,7 +4,7 @@
 
 ## Overview
 
-A fully local Retrieval-Augmented Generation (RAG) pipeline evaluated across 18 experimental configurations on PubMedQA. No cloud, no API — runs entirely on Apple Silicon M4.
+A fully local Retrieval-Augmented Generation (RAG) pipeline evaluated across 18 experimental configurations on PubMedQA. No cloud, no API  runs entirely  locally
 
 ---
 
