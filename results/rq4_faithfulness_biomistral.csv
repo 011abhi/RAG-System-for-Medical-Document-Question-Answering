@@ -1,0 +1,10 @@
+chunker,retriever,em,faithfulness
+fixed,bm25,59.7,0.6474
+fixed,dense,60.0,0.5644
+fixed,hybrid,61.3,0.619
+semantic,bm25,55.7,0.6202
+semantic,dense,57.0,0.5386
+semantic,hybrid,58.7,0.5941
+sentence,bm25,57.3,0.6161
+sentence,dense,57.0,0.5331
+sentence,hybrid,57.7,0.5909

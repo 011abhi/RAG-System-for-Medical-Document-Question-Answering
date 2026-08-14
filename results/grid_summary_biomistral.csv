@@ -1,0 +1,10 @@
+chunker,retriever,em,em_pct,retrieval_hits,retrieval_pct,total
+fixed,bm25,179,59.7,290,96.7,300
+fixed,dense,180,60.0,295,98.3,300
+fixed,hybrid,184,61.3,293,97.7,300
+sentence,bm25,172,57.3,278,92.7,300
+sentence,dense,171,57.0,279,93.0,300
+sentence,hybrid,173,57.7,290,96.7,300
+semantic,bm25,167,55.7,279,93.0,300
+semantic,dense,171,57.0,283,94.3,300
+semantic,hybrid,176,58.7,290,96.7,300

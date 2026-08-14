@@ -1,0 +1,268 @@
+
+import csv
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+ 
+# ── Output directory ──────────────────────────────────────────────────────────
+os.makedirs('results/charts', exist_ok=True)
+ 
+# ── Colour palette ────────────────────────────────────────────────────────────
+BLUE   = '#1F3A8A'
+ORANGE = '#E87B3C'
+GREEN  = '#2E8B57'
+RED    = '#C0392B'
+GRAY   = '#888888'
+PURPLE = '#6C5CE7'
+ 
+# ── Load Mistral grid summary ─────────────────────────────────────────────────
+mistral = {}
+retrieval_m = {}
+with open('results/grid_summary.csv') as f:
+    for r in csv.DictReader(f):
+        key = (r['chunker'], r['retriever'])
+        mistral[key]     = float(r['em_pct'])
+        retrieval_m[key] = float(r['retrieval_pct'])
+ 
+# ── Load BioMistral grid summary ─────────────────────────────────────────────
+biomistral = {}
+with open('results/grid_summary_biomistral.csv') as f:
+    for r in csv.DictReader(f):
+        key = (r['chunker'], r['retriever'])
+        biomistral[key] = float(r['em_pct'])
+ 
+# ── Load faithfulness data ────────────────────────────────────────────────────
+faith_data = {}
+with open('results/rq4_faithfulness_fixed.csv') as f:
+    for r in csv.DictReader(f):
+        key = (r['chunker'], r['retriever'])
+        faith_data[key] = float(r['faithfulness'])
+ 
+# ── Load BERTScore data ───────────────────────────────────────────────────────
+bert_data = {}
+with open('results/rq2_rq3_summary.csv') as f:
+    for r in csv.DictReader(f):
+        key = (r['chunker'], r['retriever'])
+        bert_data[key] = float(r['bertscore'])
+ 
+# ── Axis labels ───────────────────────────────────────────────────────────────
+chunkers   = ['fixed', 'sentence', 'semantic']
+retrievers = ['bm25', 'dense', 'hybrid']
+labels_c   = ['Fixed-size', 'Sentence-level', 'Semantic']
+labels_r   = ['BM25', 'Dense', 'Hybrid RRF']
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# FIGURE 5.1 — EM Accuracy by Chunking Strategy (both models)
+# ─────────────────────────────────────────────────────────────────────────────
+fig, ax = plt.subplots(figsize=(9, 5))
+x = np.arange(len(chunkers))
+w = 0.35
+ 
+m_em = [np.mean([mistral[(c, r)] for r in retrievers]) for c in chunkers]
+b_em = [np.mean([biomistral[(c, r)] for r in retrievers]) for c in chunkers]
+ 
+bars1 = ax.bar(x - w/2, m_em, w, label='Mistral-7B-Instruct', color=BLUE)
+bars2 = ax.bar(x + w/2, b_em, w, label='BioMistral-7B', color=ORANGE)
+ 
+for i, (mv, bv) in enumerate(zip(m_em, b_em)):
+    ax.text(i - w/2, mv + 0.5, f'{mv:.1f}%', ha='center', va='bottom', fontsize=9, fontweight='bold')
+    ax.text(i + w/2, bv + 0.5, f'{bv:.1f}%', ha='center', va='bottom', fontsize=9, fontweight='bold')
+ 
+ax.set_xticks(x)
+ax.set_xticklabels(labels_c, fontsize=11)
+ax.set_ylabel('Exact Match Accuracy (%)', fontsize=11)
+ax.set_title('Figure 5.1: EM Accuracy by Chunking Strategy', fontsize=12, fontweight='bold')
+ax.set_ylim(0, 75)
+ax.legend(fontsize=10)
+ax.grid(axis='y', alpha=0.3)
+plt.tight_layout()
+plt.savefig('results/charts/fig5_1_chunking_em.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Figure 5.1 saved: fig5_1_chunking_em.png')
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# FIGURE 5.2 — EM Accuracy by Retrieval Method (both models)
+# ─────────────────────────────────────────────────────────────────────────────
+fig, ax = plt.subplots(figsize=(9, 5))
+x = np.arange(len(retrievers))
+ 
+m_r = [np.mean([mistral[(c, r)] for c in chunkers]) for r in retrievers]
+b_r = [np.mean([biomistral[(c, r)] for c in chunkers]) for r in retrievers]
+ 
+ax.bar(x - w/2, m_r, w, label='Mistral-7B-Instruct', color=BLUE)
+ax.bar(x + w/2, b_r, w, label='BioMistral-7B', color=ORANGE)
+ 
+for i, (mv, bv) in enumerate(zip(m_r, b_r)):
+    ax.text(i - w/2, mv + 0.5, f'{mv:.1f}%', ha='center', va='bottom', fontsize=9, fontweight='bold')
+    ax.text(i + w/2, bv + 0.5, f'{bv:.1f}%', ha='center', va='bottom', fontsize=9, fontweight='bold')
+ 
+ax.set_xticks(x)
+ax.set_xticklabels(labels_r, fontsize=11)
+ax.set_ylabel('Exact Match Accuracy (%)', fontsize=11)
+ax.set_title('Figure 5.2: EM Accuracy by Retrieval Method', fontsize=12, fontweight='bold')
+ax.set_ylim(0, 75)
+ax.legend(fontsize=10)
+ax.grid(axis='y', alpha=0.3)
+plt.tight_layout()
+plt.savefig('results/charts/fig5_2_retrieval_em.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Figure 5.2 saved: fig5_2_retrieval_em.png')
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# FIGURE 5.3 — Retrieval Precision vs EM (Generation Bottleneck Chart)
+# ─────────────────────────────────────────────────────────────────────────────
+fig, ax = plt.subplots(figsize=(12, 5))
+ 
+conditions = [f'{c[:3].title()}\nx\n{r.title()}' for c in chunkers for r in retrievers]
+em_vals  = [mistral[(c, r)] for c in chunkers for r in retrievers]
+ret_vals = [retrieval_m[(c, r)] for c in chunkers for r in retrievers]
+ 
+x = np.arange(len(conditions))
+w2 = 0.38
+ 
+ax.bar(x - w2/2, ret_vals, w2, label='Retrieval Precision (%)', color=GREEN, alpha=0.85)
+ax.bar(x + w2/2, em_vals,  w2, label='Exact Match Accuracy (%)', color=BLUE, alpha=0.85)
+ 
+ax.set_xticks(x)
+ax.set_xticklabels(conditions, fontsize=8)
+ax.set_ylabel('Percentage (%)', fontsize=11)
+ax.set_title('Figure 5.3: Retrieval Precision vs EM Accuracy\n(Generation is the Bottleneck — Mistral)',
+             fontsize=11, fontweight='bold')
+ax.set_ylim(0, 110)
+ax.legend(fontsize=10)
+ax.grid(axis='y', alpha=0.3)
+ax.axhline(y=92, color=GREEN, linestyle='--', alpha=0.4, linewidth=1, label='Min retrieval')
+plt.tight_layout()
+plt.savefig('results/charts/fig5_3_bottleneck.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Figure 5.3 saved: fig5_3_bottleneck.png')
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# FIGURE 5.4 — Faithfulness vs BERTScore Scatter (RQ4)
+# ─────────────────────────────────────────────────────────────────────────────
+colour_map = {
+    ('fixed',    'bm25'):   BLUE,
+    ('fixed',    'dense'):  ORANGE,
+    ('fixed',    'hybrid'): GREEN,
+    ('sentence', 'bm25'):   '#8B0000',
+    ('sentence', 'dense'):  '#FF6B6B',
+    ('sentence', 'hybrid'): '#FF9F43',
+    ('semantic', 'bm25'):   PURPLE,
+    ('semantic', 'dense'):  '#A29BFE',
+    ('semantic', 'hybrid'): '#74B9FF',
+}
+ 
+fig, ax = plt.subplots(figsize=(7, 6))
+ 
+for (c, r), faith in faith_data.items():
+    if (c, r) in bert_data:
+        bs = bert_data[(c, r)]
+        colour = colour_map.get((c, r), GRAY)
+        ax.scatter(faith, bs, s=120, color=colour, zorder=5)
+        ax.annotate(f'{c[:3]}\nx{r[:3]}', (faith, bs),
+                    textcoords='offset points', xytext=(6, 4), fontsize=8)
+ 
+# Trend line
+fx = list(faith_data.values())
+fy = [bert_data[k] for k in faith_data if k in bert_data]
+if len(fx) > 1:
+    z = np.polyfit(fx, fy, 1)
+    p = np.poly1d(z)
+    xs = np.linspace(min(fx), max(fx), 100)
+    ax.plot(xs, p(xs), '--', color=GRAY, alpha=0.6, linewidth=1.5,
+            label=r'Trend ($\rho$=0.167, p=0.667)')
+ 
+ax.set_xlabel('Faithfulness Score', fontsize=11)
+ax.set_ylabel('BERTScore F1', fontsize=11)
+ax.set_title('Figure 5.4: Faithfulness vs BERTScore\n(Spearman ρ=0.167, p=0.667 — weak agreement)',
+             fontsize=11, fontweight='bold')
+ax.legend(fontsize=10)
+ax.grid(alpha=0.3)
+plt.tight_layout()
+plt.savefig('results/charts/fig5_4_scatter_rq4.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Figure 5.4 saved: fig5_4_scatter_rq4.png')
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# FIGURE 5.5 — Failure Type Breakdown (Mistral fixed+bm25)
+# ─────────────────────────────────────────────────────────────────────────────
+counts = {'success': 0, 'generation_failure': 0, 'retrieval_failure': 0, 'lucky_guess': 0}
+ 
+with open('results/grid_fixed_bm25.csv') as f:
+    for r in csv.DictReader(f):
+        ft = r.get('failure_type', '')
+        if ft in counts:
+            counts[ft] += 1
+ 
+fig, ax = plt.subplots(figsize=(7, 5))
+ 
+labels_ft  = ['Success', 'Generation\nFailure', 'Retrieval\nFailure', 'Lucky\nGuess']
+vals_ft    = [counts['success'], counts['generation_failure'],
+              counts['retrieval_failure'], counts['lucky_guess']]
+colours_ft = [GREEN, RED, ORANGE, GRAY]
+ 
+bars = ax.bar(labels_ft, vals_ft, color=colours_ft, edgecolor='white', linewidth=1.5)
+ 
+for bar, val in zip(bars, vals_ft):
+    ax.text(bar.get_x() + bar.get_width() / 2,
+            bar.get_height() + 2,
+            f'{val}\n({100 * val / 300:.1f}%)',
+            ha='center', va='bottom', fontsize=10, fontweight='bold')
+ 
+ax.set_ylabel('Number of Instances (n=300)', fontsize=11)
+ax.set_title('Figure 5.5: Failure Type Breakdown\nMistral — Fixed Chunking + BM25 Retrieval',
+             fontsize=11, fontweight='bold')
+ax.set_ylim(0, 200)
+ax.grid(axis='y', alpha=0.3)
+plt.tight_layout()
+plt.savefig('results/charts/fig5_5_failure_types.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Figure 5.5 saved: fig5_5_failure_types.png')
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# FIGURE 5.6 — No-RAG vs RAG Comparison (RQ1)
+# ─────────────────────────────────────────────────────────────────────────────
+fig, ax = plt.subplots(figsize=(7, 5))
+ 
+bars = ax.bar(
+    ['No RAG\n(Mistral)', 'RAG — Fixed+BM25\n(Mistral)'],
+    [33.7, 41.3],
+    color=[RED, BLUE],
+    width=0.45,
+    edgecolor='white',
+    linewidth=1.5
+)
+ 
+for bar, val in zip(bars, [33.7, 41.3]):
+    ax.text(bar.get_x() + bar.get_width() / 2,
+            val + 0.5,
+            f'{val}%',
+            ha='center', va='bottom', fontsize=13, fontweight='bold')
+ 
+ax.axhline(y=78, color=GREEN, linestyle='--', linewidth=1.5, label='Human expert accuracy (78%)')
+ 
+ax.set_ylabel('Exact Match Accuracy (%)', fontsize=11)
+ax.set_title('Figure 5.6: No-Retrieval vs RAG Accuracy (RQ1)', fontsize=12, fontweight='bold')
+ax.set_ylim(0, 90)
+ax.legend(fontsize=10)
+ax.grid(axis='y', alpha=0.3)
+ 
+ax.annotate(
+    '73.3% of no-RAG outputs\nfalsely reference non-existent\nsource material',
+    xy=(0, 33.7),
+    xytext=(0.35, 55),
+    arrowprops=dict(arrowstyle='->', color=RED),
+    fontsize=9,
+    color=RED
+)
+ 
+plt.tight_layout()
+plt.savefig('results/charts/fig5_6_rq1_comparison.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Figure 5.6 saved: fig5_6_rq1_comparison.png')
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+print()
+print('All 6 charts saved to results/charts/')
+print('Use these in your dissertation as Figure 5.1 through Figure 5.6')

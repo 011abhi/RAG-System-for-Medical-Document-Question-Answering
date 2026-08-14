@@ -1,0 +1,101 @@
+condition_id,chunker,retriever,model,question,gold,answer,correct,retrieval_hit,failure_type,raw_output,grounding_score
+1,fixed,bm25,mistral,Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Landolt C and snellen e acuity: differences in strabismus amblyopia?,no,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,"Syncope during bathing in infants, a pediatric form of water-induced urticaria?",yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Are the long-term results of the transanal pull-through equal to those of the transabdominal pull-through?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Can tailored interventions increase mammography use among HMO women?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Double balloon enteroscopy: is it efficacious and safe in a community setting?,yes,maybe,0,0,retrieval_failure,Maybe,0.0000
+1,fixed,bm25,mistral,30-Day and 1-year mortality in emergency general surgery laparotomies: an area of concern and need for improvement?,maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Is adjustment for reporting heterogeneity necessary in sleep disorders?,no,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Do mutations causing low HDL-C promote increased carotid intima-media thickness?,no,maybe,0,1,generation_failure,"Maybe. The context does not provide a definitive answer, as it only mentions that carotid intima-media thickness measurements were obtained in cases with mutations in LCAT, ABCA1, and APOA1, but",0.0000
+1,fixed,bm25,mistral,A short stay or 23-hour ward in a general and academic children's hospital: are they effective?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Did Chile's traffic law reform push police enforcement?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Therapeutic anticoagulation in the trauma patient: is it safe?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Differentiation of nonalcoholic from alcoholic steatohepatitis: are routine laboratory markers useful?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Prompting Primary Care Providers about Increased Patient Risk As a Result of Family History: Does It Work?,no,no,1,1,success,No,0.0000
+1,fixed,bm25,mistral,Do emergency ultrasound fellowship programs impact emergency medicine residents' ultrasound education?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Patient-Controlled Therapy of Breathlessness in Palliative Care: A New Therapeutic Concept for Opioid Administration?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Is there still a need for living-related liver transplantation in children?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Do patterns of knowledge and attitudes exist among unvaccinated seniors?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Is there a model to teach and practice retroperitoneoscopic nephrectomy?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Cardiovascular risk in a rural adult West African population: is resting heart rate also relevant?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Acute respiratory distress syndrome in children with malignancy--can we predict outcome?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Secondhand smoke risk in infants discharged from an NICU: potential for significant health disparities?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Do nomograms designed to predict biochemical recurrence (BCR) do a better job of predicting more clinically relevant prostate cancer outcomes than BCR?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Amblyopia: is visual loss permanent?,no,yes,0,0,retrieval_failure,Yes,0.0000
+1,fixed,bm25,mistral,Implementation of epidural analgesia for labor: is the standard of effective analgesia reachable in all women?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Does HER2 immunoreactivity provide prognostic information in locally advanced urothelial carcinoma patients receiving adjuvant M-VEC chemotherapy?,maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Is halofantrine ototoxic?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Visceral adipose tissue area measurement at a single level: can it represent visceral adipose tissue volume?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Necrotizing fasciitis: an indication for hyperbaric oxygenation therapy?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Is the Hawkins sign able to predict necrosis in fractures of the neck of the astragalus?,maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Is a mandatory general surgery rotation necessary in the surgical clerkship?,no,no,1,1,success,No,0.0000
+1,fixed,bm25,mistral,Is Acupuncture Efficacious for Treating Phonotraumatic Vocal Pathologies?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Is aneurysm repair justified for the patients aged 80 or older after aneurysmal subarachnoid hemorrhage?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Do general practice characteristics influence uptake of an information technology (IT) innovation in primary care?,no,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Prognosis of well differentiated small hepatocellular carcinoma--is well differentiated hepatocellular carcinoma clinically early cancer?,no,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Do follow-up recommendations for abnormal Papanicolaou smears influence patient adherence?,no,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Biomolecular identification of allergenic pollen: a new perspective for aerobiological monitoring?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does diabetes mellitus influence the efficacy of FDG-PET in the diagnosis of cervical cancer?,no,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Biomechanical and wound healing characteristics of corneas after excimer laser keratorefractive surgery: is there a difference between advanced surface ablation and sub-Bowman's keratomileusis?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does radiotherapy of the primary rectal cancer affect prognosis after pelvic exenteration for recurrent rectal cancer?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Can a practicing surgeon detect early lymphedema reliably?,maybe,maybe,1,1,success,Maybe,0.0000
+1,fixed,bm25,mistral,Colorectal cancer with synchronous liver metastases: does global management at the same centre improve results?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Is motion perception deficit in schizophrenia a consequence of eye-tracking abnormality?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Transgastric endoscopic splenectomy: is it possible?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,It's Fournier's gangrene still dangerous?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Is it appropriate to implant kidneys from elderly donors in young recipients?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Do provider service networks result in lower expenditures compared with HMOs or primary care case management in Florida's Medicaid program?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Assessment of carotid artery stenosis before coronary artery bypass surgery. Is it always necessary?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Should direct mesocolon invasion be included in T4 for the staging of gastric cancer?,maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Do Surrogates of Injury Severity Influence the Occurrence of Heterotopic Ossification in Fractures of the Acetabulum?,maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Does pretreatment with statins improve clinical outcome after stroke?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Processing fluency effects: can the content and presentation of participant information sheets influence recruitment and participation for an antenatal intervention?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Sternal fracture in growing children : A rare and often overlooked fracture?,maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Is there a correlation between androgens and sexual desire in women?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does immediate breast reconstruction compromise the delivery of adjuvant chemotherapy?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Human papillomavirus and pterygium. Is the virus a risk factor?,maybe,maybe,1,1,success,Maybe.,0.0000
+1,fixed,bm25,mistral,Can PRISM predict length of PICU stay?,no,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Can predilatation in transcatheter aortic valve implantation be omitted?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Autoerotic asphyxiation: secret pleasure--lethal outcome?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Major depression and alcohol use disorder in adolescence: Does comorbidity lead to poorer outcomes of depression?,no,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Cold preparation use in young children after FDA warnings: do concerns still exist?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does a 4 diagram manual enable laypersons to operate the Laryngeal Mask Supreme®?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Can we measure mesopic pupil size with the cobalt blue light slit-lamp biomicroscopy method?,no,maybe,0,1,generation_failure,"Maybe. The context does not specify that the slit-lamp biomicroscopy method used cobalt blue light for measuring pupil diameter. However, it is possible that the method could be adapted to measure mesopic pupil size",0.0000
+1,fixed,bm25,mistral,Should circumcision be performed in childhood?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Does a colonoscopy after acute diverticulitis affect its management?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Do instrumental activities of daily living predict dementia at 1- and 2-year follow-up?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does the Simultaneous Use of a Neuroendoscope Influence the Incidence of Ventriculoperitoneal Shunt Infection?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,"Body perception: do parents, their children, and their children's physicians perceive body image differently?",yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Is a specialised training of phonological awareness indicated in every preschool child?,maybe,maybe,1,1,success,Maybe,0.0000
+1,fixed,bm25,mistral,Is there any relationship between streptococcal infection and multiple sclerosis?,yes,maybe,0,1,generation_failure,Maybe.,0.0000
+1,fixed,bm25,mistral,Is the combination with 2-methoxyestradiol able to reduce the dosages of chemotherapeutices in the treatment of human ovarian cancer?,yes,maybe,0,1,generation_failure,Maybe.,0.0000
+1,fixed,bm25,mistral,Assessing joint line positions by means of the contralateral knee: a new approach for planning knee revision surgery?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does the type of tibial component affect mechanical alignment in unicompartmental knee replacement?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Is tumour expression of VEGF associated with venous invasion and survival in pT3 renal cell carcinoma?,maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Injury and poisoning mortality among young men--are there any common factors amenable to prevention?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Continuation of pregnancy after antenatal corticosteroid administration: opportunity for rescue?,maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Does either obesity or OSA severity influence the response of autotitrating CPAP machines in very obese subjects?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does the clinical presentation of a prior preterm birth predict risk in a subsequent pregnancy?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Is the Distance Worth It?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Aripiprazole: a new risk factor for pathological gambling?,yes,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Immune suppression by lysosomotropic amines and cyclosporine on T-cell responses to minor and major histocompatibility antigens: does synergy exist?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does induction chemotherapy have a role in the management of nasopharyngeal carcinoma?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Treatment of contralateral hydrocele in neonatal testicular torsion: Is less more?,maybe,no,0,1,generation_failure,No,0.0000
+1,fixed,bm25,mistral,"Are normally sighted, visually impaired, and blind pedestrians accurate and reliable at making street crossing decisions?",maybe,yes,0,1,generation_failure,Yes,0.0000
+1,fixed,bm25,mistral,Is it Crohn's disease?,maybe,no,0,0,retrieval_failure,No,0.0000
+1,fixed,bm25,mistral,Is Chaalia/Pan Masala harmful for health?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does multi-modal cervical physical therapy improve tinnitus in patients with cervicogenic somatic tinnitus?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Detailed analysis of sputum and systemic inflammation in asthma phenotypes: are paucigranulocytic asthmatics really non-inflammatory?,maybe,no,0,1,generation_failure,No,0.0000
+1,fixed,bm25,mistral,Is HIV/STD control in Jamaica making a difference?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Is Panton-Valentine leucocidin associated with the pathogenesis of Staphylococcus aureus bacteraemia in the UK?,maybe,maybe,1,1,success,Maybe,0.0000
+1,fixed,bm25,mistral,Are even impaired fasting blood glucose levels preoperatively associated with increased mortality after CABG surgery?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does positron emission tomography change management in primary rectal cancer?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Can you deliver accurate tidal volume by manual resuscitator?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Can increases in the cigarette tax rate be linked to cigarette retail prices?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Vertical lines in distal esophageal mucosa (VLEM): a true endoscopic manifestation of esophagitis in children?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does hypoglycaemia increase the risk of cardiovascular events?,yes,yes,1,1,success,Yes,0.0000
+1,fixed,bm25,mistral,Does the radiographic transition zone correlate with the level of aganglionosis on the specimen in Hirschsprung's disease?,no,maybe,0,1,generation_failure,Maybe,0.0000
+1,fixed,bm25,mistral,Is dexamethasone an effective alternative to oral prednisone in the treatment of pediatric asthma exacerbations?,yes,yes,1,1,success,Yes,0.0000

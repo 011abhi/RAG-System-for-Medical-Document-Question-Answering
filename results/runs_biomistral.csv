@@ -1,0 +1,301 @@
+condition_id,chunker,retriever,model,question,gold,answer,correct,retrieval_hit,failure_type,raw_output
+2,fixed,bm25,biomistral,Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Landolt C and snellen e acuity: differences in strabismus amblyopia?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,"Syncope during bathing in infants, a pediatric form of water-induced urticaria?",yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Are the long-term results of the transanal pull-through equal to those of the transabdominal pull-through?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Can tailored interventions increase mammography use among HMO women?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Double balloon enteroscopy: is it efficacious and safe in a community setting?,yes,yes,1,0,lucky_guess, Yes
+2,fixed,bm25,biomistral,30-Day and 1-year mortality in emergency general surgery laparotomies: an area of concern and need for improvement?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is adjustment for reporting heterogeneity necessary in sleep disorders?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Do mutations causing low HDL-C promote increased carotid intima-media thickness?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,A short stay or 23-hour ward in a general and academic children's hospital: are they effective?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Did Chile's traffic law reform push police enforcement?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Therapeutic anticoagulation in the trauma patient: is it safe?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Differentiation of nonalcoholic from alcoholic steatohepatitis: are routine laboratory markers useful?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Prompting Primary Care Providers about Increased Patient Risk As a Result of Family History: Does It Work?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Do emergency ultrasound fellowship programs impact emergency medicine residents' ultrasound education?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Patient-Controlled Therapy of Breathlessness in Palliative Care: A New Therapeutic Concept for Opioid Administration?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is there still a need for living-related liver transplantation in children?,yes,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,Do patterns of knowledge and attitudes exist among unvaccinated seniors?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is there a model to teach and practice retroperitoneoscopic nephrectomy?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Cardiovascular risk in a rural adult West African population: is resting heart rate also relevant?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Acute respiratory distress syndrome in children with malignancy--can we predict outcome?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Secondhand smoke risk in infants discharged from an NICU: potential for significant health disparities?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Do nomograms designed to predict biochemical recurrence (BCR) do a better job of predicting more clinically relevant prostate cancer outcomes than BCR?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Amblyopia: is visual loss permanent?,no,no,1,0,lucky_guess, No.
+2,fixed,bm25,biomistral,Implementation of epidural analgesia for labor: is the standard of effective analgesia reachable in all women?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does HER2 immunoreactivity provide prognostic information in locally advanced urothelial carcinoma patients receiving adjuvant M-VEC chemotherapy?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Is halofantrine ototoxic?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Visceral adipose tissue area measurement at a single level: can it represent visceral adipose tissue volume?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Necrotizing fasciitis: an indication for hyperbaric oxygenation therapy?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is the Hawkins sign able to predict necrosis in fractures of the neck of the astragalus?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is a mandatory general surgery rotation necessary in the surgical clerkship?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is Acupuncture Efficacious for Treating Phonotraumatic Vocal Pathologies?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is aneurysm repair justified for the patients aged 80 or older after aneurysmal subarachnoid hemorrhage?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Do general practice characteristics influence uptake of an information technology (IT) innovation in primary care?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Prognosis of well differentiated small hepatocellular carcinoma--is well differentiated hepatocellular carcinoma clinically early cancer?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Do follow-up recommendations for abnormal Papanicolaou smears influence patient adherence?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Biomolecular identification of allergenic pollen: a new perspective for aerobiological monitoring?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does diabetes mellitus influence the efficacy of FDG-PET in the diagnosis of cervical cancer?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Biomechanical and wound healing characteristics of corneas after excimer laser keratorefractive surgery: is there a difference between advanced surface ablation and sub-Bowman's keratomileusis?,yes,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Does radiotherapy of the primary rectal cancer affect prognosis after pelvic exenteration for recurrent rectal cancer?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Can a practicing surgeon detect early lymphedema reliably?,maybe,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Colorectal cancer with synchronous liver metastases: does global management at the same centre improve results?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Is motion perception deficit in schizophrenia a consequence of eye-tracking abnormality?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Transgastric endoscopic splenectomy: is it possible?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,It's Fournier's gangrene still dangerous?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is it appropriate to implant kidneys from elderly donors in young recipients?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Do provider service networks result in lower expenditures compared with HMOs or primary care case management in Florida's Medicaid program?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Assessment of carotid artery stenosis before coronary artery bypass surgery. Is it always necessary?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Should direct mesocolon invasion be included in T4 for the staging of gastric cancer?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Do Surrogates of Injury Severity Influence the Occurrence of Heterotopic Ossification in Fractures of the Acetabulum?,maybe,no,0,1,generation_failure, No
+2,fixed,bm25,biomistral,Does pretreatment with statins improve clinical outcome after stroke?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Processing fluency effects: can the content and presentation of participant information sheets influence recruitment and participation for an antenatal intervention?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Sternal fracture in growing children : A rare and often overlooked fracture?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is there a correlation between androgens and sexual desire in women?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does immediate breast reconstruction compromise the delivery of adjuvant chemotherapy?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Human papillomavirus and pterygium. Is the virus a risk factor?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Can PRISM predict length of PICU stay?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Can predilatation in transcatheter aortic valve implantation be omitted?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Autoerotic asphyxiation: secret pleasure--lethal outcome?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Major depression and alcohol use disorder in adolescence: Does comorbidity lead to poorer outcomes of depression?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Cold preparation use in young children after FDA warnings: do concerns still exist?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does a 4 diagram manual enable laypersons to operate the Laryngeal Mask Supreme®?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Can we measure mesopic pupil size with the cobalt blue light slit-lamp biomicroscopy method?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Should circumcision be performed in childhood?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Does a colonoscopy after acute diverticulitis affect its management?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Do instrumental activities of daily living predict dementia at 1- and 2-year follow-up?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does the Simultaneous Use of a Neuroendoscope Influence the Incidence of Ventriculoperitoneal Shunt Infection?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,"Body perception: do parents, their children, and their children's physicians perceive body image differently?",yes,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,Is a specialised training of phonological awareness indicated in every preschool child?,maybe,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,Is there any relationship between streptococcal infection and multiple sclerosis?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is the combination with 2-methoxyestradiol able to reduce the dosages of chemotherapeutices in the treatment of human ovarian cancer?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Assessing joint line positions by means of the contralateral knee: a new approach for planning knee revision surgery?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does the type of tibial component affect mechanical alignment in unicompartmental knee replacement?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is tumour expression of VEGF associated with venous invasion and survival in pT3 renal cell carcinoma?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Injury and poisoning mortality among young men--are there any common factors amenable to prevention?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Continuation of pregnancy after antenatal corticosteroid administration: opportunity for rescue?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Does either obesity or OSA severity influence the response of autotitrating CPAP machines in very obese subjects?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does the clinical presentation of a prior preterm birth predict risk in a subsequent pregnancy?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is the Distance Worth It?,yes,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Aripiprazole: a new risk factor for pathological gambling?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Immune suppression by lysosomotropic amines and cyclosporine on T-cell responses to minor and major histocompatibility antigens: does synergy exist?,yes,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Does induction chemotherapy have a role in the management of nasopharyngeal carcinoma?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Treatment of contralateral hydrocele in neonatal testicular torsion: Is less more?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,"Are normally sighted, visually impaired, and blind pedestrians accurate and reliable at making street crossing decisions?",maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is it Crohn's disease?,maybe,yes,0,0,retrieval_failure, Yes
+2,fixed,bm25,biomistral,Is Chaalia/Pan Masala harmful for health?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does multi-modal cervical physical therapy improve tinnitus in patients with cervicogenic somatic tinnitus?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Detailed analysis of sputum and systemic inflammation in asthma phenotypes: are paucigranulocytic asthmatics really non-inflammatory?,maybe,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Is HIV/STD control in Jamaica making a difference?,yes,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Is Panton-Valentine leucocidin associated with the pathogenesis of Staphylococcus aureus bacteraemia in the UK?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Are even impaired fasting blood glucose levels preoperatively associated with increased mortality after CABG surgery?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does positron emission tomography change management in primary rectal cancer?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Can you deliver accurate tidal volume by manual resuscitator?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Can increases in the cigarette tax rate be linked to cigarette retail prices?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Vertical lines in distal esophageal mucosa (VLEM): a true endoscopic manifestation of esophagitis in children?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does hypoglycaemia increase the risk of cardiovascular events?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does the radiographic transition zone correlate with the level of aganglionosis on the specimen in Hirschsprung's disease?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is dexamethasone an effective alternative to oral prednisone in the treatment of pediatric asthma exacerbations?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Mammographic screening in Sami speaking municipalities and a control group. Are early outcome measures influenced by ethnicity?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Do Electrochemiluminescence Assays Improve Prediction of Time to Type 1 Diabetes in Autoantibody-Positive TrialNet Subjects?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Assessment of appropriate antimicrobial prescribing: do experts agree?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is there a favorable subset of patients with prostate cancer who develop oligometastases?,yes,yes,1,0,lucky_guess, Yes
+2,fixed,bm25,biomistral,Cycloplegic autorefraction in young adults: is it mandatory?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Does screening or surveillance for primary hepatocellular carcinoma with ultrasonography improve the prognosis of patients?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,"""Would a man smell a rose then throw it away?",maybe,yes,0,0,retrieval_failure, Yes
+2,fixed,bm25,biomistral,Department of Transportation vs self-reported data on motor vehicle collisions and driving convictions for stroke survivors: do they agree?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,"Neoadjuvant Imatinib in Locally Advanced Gastrointestinal stromal Tumours, Will Kit Mutation Analysis Be a Pathfinder?",yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does the lipid-lowering peroxisome proliferator-activated receptors ligand bezafibrate prevent colon cancer in patients with coronary artery disease?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does self-efficacy mediate the relationship between transformational leadership behaviours and healthcare workers' sleep quality?,maybe,no,0,1,generation_failure, No
+2,fixed,bm25,biomistral,Does microbial contamination influence the success of the hematopoietic cell transplantation outcomes?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Very high serum CA 19-9 levels: a contraindication to pancreaticoduodenectomy?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Perioperative care in an animal model for training in abdominal surgery: is it necessary a preoperative fasting?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Are physicians aware of the side effects of angiotensin-converting enzyme inhibitors?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Residual fundus or neofundus after laparoscopic sleeve gastrectomy: is fundectomy safe and effective as revision surgery?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Are physician estimates of asthma severity less accurate in black than in white patients?,yes,no,0,1,generation_failure, No
+2,fixed,bm25,biomistral,Does laparoscopic surgery decrease the risk of atrial fibrillation after foregut surgery?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,"The Main Gate Syndrome: a new format in mass-casualty victim ""surge"" management?",yes,yes,1,0,lucky_guess, Yes.
+2,fixed,bm25,biomistral,Do communication disorders extend to musical messages?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Do patients with rheumatoid arthritis established on methotrexate and folic acid 5 mg daily need to continue folic acid supplements long term?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Can infundibular height predict the clearance of lower pole calyceal stone after extracorporeal shockwave lithotripsy?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does lung ischemia and reperfusion have an impact on coronary flow?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is a patient's self-reported health-related quality of life a prognostic factor for survival in non-small-cell lung cancer patients?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Transient tachypnea of the newborn (TTN): a role for polymorphisms in the beta-adrenergic receptor (ADRB) encoding genes?,yes,yes,1,0,lucky_guess, Yes
+2,fixed,bm25,biomistral,Is duration of psychological treatment for depression related to return into treatment?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does shaving the incision site increase the infection rate after spinal surgery?,maybe,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,The influence of atmospheric pressure on aortic aneurysm rupture--is the diameter of the aneurysm important?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Do French lay people and health professionals find it acceptable to breach confidentiality to protect a patient's wife from a sexually transmitted disease?,maybe,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,Do somatic complaints predict subsequent symptoms of depression?,maybe,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Are women with major depression in pregnancy identifiable in population health data?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Remote ischemic postconditioning: does it protect against ischemic damage in percutaneous coronary revascularization?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does combining antiretroviral agents in a single dosage form enhance quality of life of HIV/AIDS patients?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,The inverse equity hypothesis: does it apply to coverage of cancer screening in middle-income countries?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Identification of racial disparities in breast cancer mortality: does scale matter?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does the leukocyte count correlate with the severity of injury?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Can transcranial direct current stimulation be useful in differentiating unresponsive wakefulness syndrome from minimally conscious state patients?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Aromatase inhibitor-related musculoskeletal symptoms: is preventing osteoporosis the key to eliminating these symptoms?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Could different follow-up modalities play a role in the diagnosis of asymptomatic endometrial cancer relapses?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Locoregional opening of the rodent blood-brain barrier for paclitaxel using Nd:YAG laser-induced thermo therapy: a new concept of adjuvant glioma therapy?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Preoperative tracheobronchoscopy in newborns with esophageal atresia: does it matter?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is horizontal semicircular canal ocular reflex influenced by otolith organs input?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is perforation of the appendix a risk factor for tubal infertility and ectopic pregnancy?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Serovar specific immunity to Neisseria gonorrhoeae: does it exist?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,May student examiners be reasonable substitute examiners for faculty in an undergraduate OSCE on medical emergencies?,yes,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Are endothelial cell patterns of astrocytomas indicative of grade?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Do healthier lifestyles lead to less utilization of healthcare resources?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Antral follicle assessment as a tool for predicting outcome in IVF--is it a better predictor than age and FSH?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Do all ethnic groups in New Zealand exhibit socio-economic mortality gradients?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Can normal knee kinematics be restored with unicompartmental knee replacement?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Are serum leptin levels a prognostic factor in advanced lung cancer?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is fetal gender associated with emergency department visits for asthma during pregnancy?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Stretch-sensitive KCNQ1 mutation A link between genetic and environmental factors in the pathogenesis of atrial fibrillation?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Are adult body circumferences associated with height?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Would corrected QT dispersion predict left ventricular hypertrophy in hypertensive patients?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Traumatic aortic injury: does the anatomy of the aortic arch influence aortic trauma severity?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Inpatient versus outpatient management of neutropenic fever in gynecologic oncology patients: is risk stratification useful?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Should chest wall irradiation be included after mastectomy and negative node breast cancer?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Can bisphosphonate treatment be stopped in a growing child with skeletal fragility?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,"Regional anesthesia as compared with general anesthesia for surgery in geriatric patients with hip fracture: does it decrease morbidity, mortality, and health care costs?",no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Does blood pressure change in treated hypertensive patients depending on whether it is measured by a physician or a nurse?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Treadmill testing of children who have spina bifida and are ambulatory: does peak oxygen uptake reflect maximum oxygen uptake?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is the probability of prenatal diagnosis or termination of pregnancy different for fetuses with congenital anomalies conceived following assisted reproductive techniques?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Is there a relationship between complex fractionated atrial electrograms recorded during atrial fibrillation and sinus rhythm fractionation?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Does rural or urban residence make a difference to neonatal outcome in premature birth?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is the use of cyanoacrylate in intestinal anastomosis a good and reliable alternative?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is trabecular bone related to primary stability of miniscrews?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,"Is there any evidence of a ""July effect"" in patients undergoing major cancer surgery?",no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is it necessary to insert a nasobiliary drainage tube routinely after endoscopic clearance of the common bile duct in patients with choledocholithiasis-induced cholangitis?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Storage of vaccines in the community: weak link in the cold chain?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Is the clinically positive axilla in breast cancer really a contraindication to sentinel lymph node biopsy?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Convulsions and retinal haemorrhage: should we look further?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Are patients willing participants in the new wave of community-based medical education in regional and rural Australia?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Can Flexible Instruments Create Adequate Femoral Tunnel Lengths at 90° of Knee Flexion in Anterior Cruciate Ligament Reconstruction?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Quality of life in lung cancer patients: does socioeconomic status matter?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Are Biochemical Markers of Bone Turnover Representative of Bone Histomorphometry in 370 Postmenopausal Women?,maybe,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Should early extubation be the goal for children after congenital cardiac surgery?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does delivery mode affect women's postpartum quality of life in rural China?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Menopausal hormone therapy and irregular endometrial bleeding: a potential role for uterine natural killer cells?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Percutaneous ethanol injection for benign cystic thyroid nodules: is aspiration of ethanol-mixed fluid advantageous?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Can the growth rate of a gallbladder polyp predict a neoplastic polyp?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Are performance measurement systems useful?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does para-cervical block offer additional advantages in abortion induction with gemeprost in the 2nd trimester?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does insulin resistance drive the association between hyperglycemia and cardiovascular risk?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Are there risk factors that increase the rate of staple line leakage in patients undergoing primary sleeve gastrectomy for morbid obesity?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Chronic functional somatic symptoms: a single syndrome?,no,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,"Actinobaculum schaalii, a cause of urinary tract infections in children?",maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Prevalence of chronic conditions among Medicare Part A beneficiaries in 2008 and 2010: are Medicare beneficiaries getting sicker?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does successful completion of the Perinatal Education Programme result in improved obstetric practice?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Do patients with localized prostate cancer treatment really want more aggressive treatment?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Does music influence stress in mechanically ventilated patients?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Does reducing spasticity translate into functional benefit?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is the holmium:YAG laser the best intracorporeal lithotripter for the ureter?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Metered-dose inhalers. Do health care providers know what to teach?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Does the bracket-ligature combination affect the amount of orthodontic space closure over three months?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Health habits and vaccination status of Lebanese residents: are future doctors applying the rules of prevention?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Does vaginal intraepithelial neoplasia have the same evolution as cervical intraepithelial neoplasia?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Should general practitioners call patients by their first names?,yes,yes,1,1,success," Yes, No, or Maybe"
+2,fixed,bm25,biomistral,Transesophageal echocardiographic assessment of left ventricular function in brain-dead patients: are marginally acceptable hearts suitable for transplantation?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Attenuation of ischemia/reperfusion-induced ovarian damage in rats: does edaravone offer protection?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does the National Institutes of Health Stroke Scale favor left hemisphere strokes?,yes,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,Can a Novel Surgical Approach to the Temporomandibular Joint Improve Access and Reduce Complications?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,"Young-Burgess classification of pelvic ring fractures: does it predict mortality, transfusion requirements, and non-orthopaedic injuries?",maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Is vitamin D deficiency a feature of pediatric celiac disease?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is unsafe sexual behaviour increasing among HIV-infected individuals?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Cholestasis associated with small bowel atresia: do we always need to investigate?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Are financial incentives cost-effective to support smoking cessation during pregnancy?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Can medical students contribute to quality assurance programmes in day surgery?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Measurement of head and neck paragangliomas: is volumetric analysis worth the effort?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Three-dimensional ultrasound-validated large-core needle biopsy: is it a reliable method for the histological assessment of breast lesions?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Can bone thickness and inter-radicular space affect miniscrew placement in posterior mandibular sites?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Do general practice selection scores predict success at MRCGP?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,The Deformity Angular Ratio: Does It Correlate With High-Risk Cases for Potential Spinal Cord Monitoring Alerts in Pediatric 3-Column Thoracic Spinal Deformity Corrective Surgery?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does age moderate the effect of personality disorder on coping style in psychiatric inpatients?,yes,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,Autoxidation products of both carbohydrates and lipids are increased in uremic plasma: is there oxidative stress in uremia?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Can 'high-risk' human papillomaviruses (HPVs) be detected in human breast milk?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Quaternary cytoreductive surgery in ovarian cancer: does surgical effort still matter?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Chemotherapy and survival in advanced non-small cell lung carcinoma: is pneumologists' skepticism justified?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Does topical ropivacaine reduce the post-tonsillectomy morbidity in pediatric patients?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is pain a clinically relevant problem in general adult psychiatry?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does concomitant anterior/apical repair during midurethral sling improve the overactive bladder component of mixed incontinence?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Does the use of atypical antipsychotics as adjunctive therapy in depression result in cost savings?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Can patients be anticoagulated after intracerebral hemorrhage?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Diagnostic and therapeutic ureteroscopy: is dilatation of ureteral meatus always necessary?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Does managed care enable more low income persons to identify a usual source of care?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,"Knee extensor strength, dynamic stability, and functional ambulation: are they related in Parkinson's disease?",yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,"Is distance to provider a barrier to care for medicaid patients with breast, colorectal, or lung cancer?",no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Can folic acid protect against congenital heart defects in Down syndrome?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Are there mental health differences between francophone and non-francophone populations in manitoba?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Does type 1 diabetes mellitus affect Achilles tendon response to a 10 km run?,no,no,1,1,success, No
+2,fixed,bm25,biomistral,Fragility of the esophageal mucosa: a pathognomonic endoscopic sign of primary eosinophilic esophagitis?,yes,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Does cup-cage reconstruction with oversized cups provide initial stability in THA for osteoporotic acetabular fractures?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Pulmonary valve replacement in adults late after repair of tetralogy of fallot: are we operating too late?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Xanthogranulomatous cholecystitis: a premalignant condition?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Does TDP-43 type confer a distinct pattern of atrophy in frontotemporal lobar degeneration?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is oncoplastic surgery a contraindication for accelerated partial breast radiation using the interstitial multicatheter brachytherapy method?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,"Diagnostic characteristics of child bipolar I disorder: does the ""Treatment of Early Age Mania (team)"" sample generalize?",yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Estimation of basal metabolic rate in Chinese: are the current prediction equations applicable?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does rugby headgear prevent concussion?,maybe,no,0,1,generation_failure, No
+2,fixed,bm25,biomistral,Spinal subdural hematoma: a sequela of a ruptured intracranial aneurysm?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Can shape analysis differentiate free-floating internal carotid artery thrombus from atherosclerotic plaque in patients evaluated with CTA for stroke or transient ischemic attack?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Dementia and aphasia in motor neuron disease: an underrecognised association?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does solid culture for tuberculosis influence clinical decision making in India?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Diffusion-weighted echo-planar MR imaging of primary parotid gland tumors: is a prediction of different histologic subtypes possible?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Is there a role for endothelin-1 in the hemodynamic changes during hemodialysis?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Do risk factors for suicidal behavior differ by affective disorder polarity?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Multidisciplinary breast cancer clinics. Do they work?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is the international normalised ratio (INR) reliable?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,"Are there associations of health status, disease activity and damage in SLE patients?",yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,PSA repeatedly fluctuating levels are reassuring enough to avoid biopsy?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is zero central line-associated bloodstream infection rate sustainable?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,"Is gastric electrical stimulation superior to standard pharmacologic therapy in improving GI symptoms, healthcare resources, and long-term health care benefits?",yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Should pulp chamber pulpotomy be seen as a permanent treatment?,no,yes,0,0,retrieval_failure, Yes
+2,fixed,bm25,biomistral,Does transverse apex coincide with coronal apex levels (regional or global) in adolescent idiopathic scoliosis?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Does the Child Health Computing System adequately identify children with cerebral palsy?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Are we seeing the effects of public awareness campaigns?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is breast cancer prognosis inherited?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does nuchal translucency thickness in the first trimester predict GDM onset during pregnancy?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Are the arginine vasopressin V1a receptor microsatellites related to hypersexuality in children with a prepubertal and early adolescent bipolar disorder phenotype?,no,unknown,0,1,generation_failure,
+2,fixed,bm25,biomistral,Stage I non-small cell lung carcinoma: really an early stage?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Does Residency Selection Criteria Predict Performance in Orthopaedic Surgery Residency?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Optimism and survival: does an optimistic outlook predict better survival at advanced ages?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is it better to be big?,no,yes,0,0,retrieval_failure, Yes
+2,fixed,bm25,biomistral,Is arch form influenced by sagittal molar relationship or Bolton tooth-size discrepancy?,no,no,1,1,success, No
+2,fixed,bm25,biomistral,Cold knife conization vs. LEEP. Are they the same procedure?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Are pectins involved in cold acclimation and de-acclimation of winter oil-seed rape plants?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Updating emotional content in working memory: a depression-specific deficit?,yes,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,Does ultrasound imaging before puncture facilitate internal jugular vein cannulation?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Should prostate specific antigen be adjusted for body mass index?,no,no,1,1,success, No.
+2,fixed,bm25,biomistral,Does obstructive sleep apnea affect aerobic fitness?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,The effect of an intracerebroventricular injection of metformin or AICAR on the plasma concentrations of melatonin in the ewe: potential involvement of AMPK?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Literacy after cerebral hemispherectomy: Can the isolated right hemisphere read?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Characterization of the gender dimorphism after injury and hemorrhagic shock: are hormonal differences responsible?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Can communication with terminally ill patients be taught?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Delays in time to primary treatment after a diagnosis of breast cancer: does it impact survival?,no,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Are increased carotid artery pulsatility and resistance indexes early signs of vascular abnormalities in young obese males?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Are acceptance rates of a national preventive home visit programme for older people socially imbalanced?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does open access publishing increase the impact of scientific articles?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,In vivo visualization of pyloric mucosal hypertrophy in infants with hypertrophic pyloric stenosis: is there an etiologic role?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Does the early adopter of drugs exist?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Does high blood pressure reduce the risk of chronic low back pain?,yes,no,0,1,generation_failure, No
+2,fixed,bm25,biomistral,Does responsibility affect the public's valuation of health care interventions?,maybe,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Nasal fractures:  is closed reduction satisfying?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,"Do improvements in outreach, clinical, and family and community-based services predict improvements in child survival?",yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Does spontaneous remission occur in polyarteritis nodosa?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Gluten tolerance in adult patients with celiac disease 20 years after diagnosis?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Do symptoms predict COPD in smokers?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Search engine as a diagnostic tool in difficult immunological and allergologic cases: is Google useful?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Uniformity of evidence-based treatments in practice?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Do approved doctors and medical referees in the UK agree when assessing a seafarer's fitness?,no,no,1,1,success, No
+2,fixed,bm25,biomistral,Hepatorenal syndrome: are we missing some prognostic factors?,yes,yes,1,1,success, Yes
+2,fixed,bm25,biomistral,Vaginal dose assessment in image-guided brachytherapy for cervical cancer: Can we really rely on dose-point evaluation?,maybe,no,0,1,generation_failure, No.
+2,fixed,bm25,biomistral,Prescriptions as a proxy for asthma in children: a good choice?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Does the familial transmission of drinking patterns persist into young adulthood?,maybe,yes,0,1,generation_failure, Yes.
+2,fixed,bm25,biomistral,Proof of concept study: does fenofibrate have a role in sleep apnoea syndrome?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Can mental imagery functional magnetic resonance imaging predict recovery in patients with disorders of consciousness?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,The nurse cystoscopist: a feasible option?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Is cardiovascular evaluation necessary prior to and during beta-blocker therapy for infantile hemangiomas?,no,yes,0,1,generation_failure, Yes
+2,fixed,bm25,biomistral,Is specialty care associated with improved survival of patients with congestive heart failure?,yes,yes,1,1,success, Yes.
+2,fixed,bm25,biomistral,Can the prognosis of polymyalgia rheumatica be predicted at disease onset?,yes,yes,1,0,lucky_guess, Yes

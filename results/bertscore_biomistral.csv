@@ -1,0 +1,10 @@
+chunker,retriever,bertscore
+fixed,bm25,0.6877
+fixed,dense,0.6785
+fixed,hybrid,0.6815
+semantic,bm25,0.6961
+semantic,dense,0.6907
+semantic,hybrid,0.697
+sentence,bm25,0.6963
+sentence,dense,0.6887
+sentence,hybrid,0.6956

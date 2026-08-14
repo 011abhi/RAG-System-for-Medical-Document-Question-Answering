@@ -1,0 +1,7 @@
+comparison,chi2,p,significant
+RQ3 Fixed vs Sentence,1.022,0.3121,No
+RQ3 Fixed vs Semantic,1.336,0.2477,No
+RQ3 Sentence vs Semantic,0.009,0.9228,No
+RQ2 BM25 vs Dense,0.021,0.8847,No
+RQ2 BM25 vs Hybrid,0.456,0.4997,No
+RQ2 Dense vs Hybrid,0.232,0.63,No

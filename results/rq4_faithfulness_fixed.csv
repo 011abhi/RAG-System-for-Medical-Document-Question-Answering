@@ -1,0 +1,10 @@
+chunker,retriever,em,retrieval_hit,faithfulness
+fixed,bm25,41.3,96.7,0.6474
+fixed,dense,39.7,98.3,0.5644
+fixed,hybrid,42.3,97.7,0.6197
+semantic,bm25,37.0,93.0,0.6202
+semantic,dense,38.7,94.0,0.5375
+semantic,hybrid,39.3,96.7,0.5941
+sentence,bm25,37.7,92.7,0.6161
+sentence,dense,39.0,93.0,0.5342
+sentence,hybrid,39.3,96.7,0.5909
